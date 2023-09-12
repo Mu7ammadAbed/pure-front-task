@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay Reach</title>
+    <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css"> -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container-fluid px-5 py-3 min-vh-100" style="background: #FCFCFC;">
+
+    <header>
+        <nav class="d-flex justify-content-between">
+            <img src="./assets/Frame.svg" alt="Pay Reach Logo">
+
+            <div class="d-flex align-items-center w-25 justify-content-between">
+                <div>
+
+                    <img src="assets/flag.svg" alt="language flag" />
+                    <select class="border-0  ">
+                        <option selected value="en">English</option>
+                        <option value="ar">Arabic</option>
+                    </select>
+                </div>
+                <img src="./assets/Notification.svg" />
+                <div class="d-flex">
+                  <img class="rounded-5" style="margin-right: 10px;" src="./assets/Avatar.svg" alt="User Avatar" />
+                  <img src="./assets/Arrow.svg" alt="arrow to display information about user"/>
+                </div>
+              </div>
+
+        </nav>
+    </header>
+
+    <main class="border rounded border-light-subtle mt-4 p-4 min-vh-100" style="background: #FFF;">
+
+        <h4 class="mb-5">Withdraw</h4>
+
+        <div class="row">
+            <div class="col card border-light-subtle mx-3" style="background: #F6FCFF;">
+                <div class="d-flex justify-content-between align-items-center card-body">
+                    <h5>Your balance</h5>
+                    <h4>16,027$</h4>
+                </div>
+            </div>
+                <div class="col card border-light-subtle mx-3" >
+                    <div class="card-body">
+                        <input class="form-control border-0" for="Amount you want to withdraw" placeholder="Amount you want to withdraw">
+                    </div>
+                </div>
+        </div>
+
+
+        <h4 class="my-5">Choose Saved Withdr Methods</h4>
+
+        <div class="row">
+            <div class="col card border-light-subtle mx-3" style="background: #F6FCFF;">
+                <div class="row p-4">
+                    <div class="col-1"><img class="mx-auto" src="./assets/Bank.svg" alt="Bank Icon" ></div>
+                    <div class="col-10">
+                        <h5 class="mb-4">Bank Name: Bank Name</h5>
+                        <h5 class="my-4">Bank Address :2715 Ash Dr. San Jose, South Dakota 83475</h5>
+                        <h5 class="my-4">Owner : Owner</h5>
+                        <h5 class="my-4">Swift Code : AAAA-BB-CC-123</h5>
+                        <h5 class="mt-4">IBAN : GB 12 ABCD 102030 12345678</h5>
+                    </div>
+                    <div class="col-1 d-flex flex-column justify-content-between align-items-end">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle hidden-arrow btn-three-dots" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="./assets/dots.svg" alt="dropdown button">
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#"><img src="./assets/Edit.svg" alt="Edit icon"> Edit</a></li>
+                              <li><a class="dropdown-item " href="#">
+                                <button type="button" class="btn" style="padding: 0;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <img src="./assets/Delete.svg" alt="Delete icon" >Delete
+                            </button>
+                            </a></li>
+                            </ul>
+                          </div>
+                        <img src="./assets/Active-Circle.svg" alt="Active Circle" >
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col card border-light-subtle mx-3" style="background: #F6FCFF;">
+                <div class="row p-4 h-100">
+                    <div class="col-1"><img class="mx-auto" src="./assets/Wallet.svg" alt="Wallet Icon" ></div>
+                    <div class="col-10">
+                        <h5 class="mb-4">Wallet Name : wallet Name</h5>
+                        <h5 class="my-4">Owner : Owner</h5>
+                        <h5 class="my-4">Mobile Number : +966 0592596154</h5>
+                    </div>
+                    <div class="col-1 d-flex flex-column justify-content-between align-items-end h-5">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle hidden-arrow btn-three-dots" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="./assets/dots.svg" alt="dropdown button">
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#"><img src="./assets/Edit.svg" alt="Edit icon"> Edit</a></li>
+                              <li><a class="dropdown-item " href="#">
+                                <button type="button" class="btn" style="padding: 0;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <img src="./assets/Delete.svg" alt="Delete icon" >Delete
+                            </button>
+                            </a></li>
+                            </ul>
+                          </div>
+                        
+                        <img class="align-self-end" src="./assets/Circle.svg" alt="Non Active Circle" >
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button type="button" class="btn my-5 px-5 py-3" style="background: rgba(216, 25, 35, 0.1); color: #d81923;"><h3>Add New Method</h3></button>
+
+    </main>
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body p-5">
+            <h4 class="m-4 text-center">
+            Are you sure to remove this  method ?
+            </h4>
+        </div>
+        <div class="d-flex justify-content-center mb-5">
+          <button type="button" class="btn" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-danger">Ok</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script>
+        const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})
+    </script>
+</body>
+</html>
